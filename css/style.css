@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.encabezado {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(31, 31, 34, 0.5), rgba(0, 0, 0, 0.7)), url('../assets/sousouNoFrieren6.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.encabezado .container-titulo {
+    height: 45%;
+    width: 90%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, #1d1842, transparent 25%);
+    backdrop-filter: blur(.1rem);
+    cursor: default;
+}
+
+.encabezado .container-titulo h1 {
+    font-family: system-ui, sans-serif;
+    font-size: 100px;
+    color: #fff;
+}
+
+.encabezado .container-titulo h2 {
+    font-family: system-ui, sans-serif;
+    font-weight: 200;
+    color: #fff;
+}
+
+.linea-lateral {
+    padding-left: 1rem;
+    border-left: 4px solid #d12e49;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 8%;
+    height: 100%;
+    background: #1d1842;
+    border-left: #d12e49 1px solid;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li, nav ul li a {
+    list-style: none;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+nav ul li:hover {
+    transition: .3s;
+    background: #5345bbb0;
+}
+
+nav ul .li-mode {
+    position: relative;
+    display: flex;
+}
+
+nav ul .li-mode .window-screenMode {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: -20vw;
+    width: 20vw;
+    padding: 1rem;
+    background: #1d1842;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #fff;
+    border: 1px solid #d12e49;
+    border-radius: 5px;
+}
+nav ul .li-mode:hover .window-screenMode {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a .home {
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav ul li i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+main {
+    width: 92%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: background .5s ease, color .5s ease;
+}
+
+main .container-main {
+    height: 100%;
+    width: 80%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+main .container-main h2, p, img, video, hr {
+    margin-bottom: 1rem;
+}
+
+main .container-main img, video {
+    width: 100%;
+}
+
+main .container-main .img_displayFlex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .container-main .img_displayFlex img {
+    width: 48%;
+}
+
+.img_displayFlex1 {
+    margin-right: 1%;
+}
+.img_displayFlex2 {
+    margin-left: 1%;
+}
+
+

@@ -1,0 +1,17 @@
+.dark-mode {
+    background: #121430;
+    color: #dddddd;
+}
+
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+.icon-mode-light, .icon-mode-dark {
+    transition: opacity 0.5s ease;
+}
+
+.mode-background {
+    background: #5345bbb0;
+}
